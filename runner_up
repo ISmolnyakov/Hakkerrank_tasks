@@ -1,0 +1,10 @@
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+    num = list(arr) 
+    num.sort()
+    runner_up = 0;
+    for i in num:
+        if i < num[-1]:
+            runner_up = i;
+    print(runner_up)
